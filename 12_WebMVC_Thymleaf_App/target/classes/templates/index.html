@@ -1,0 +1,42 @@
+<!DOCTYPE html> <!-- Declares the document type as HTML5 -->
+<html xmlns:th="http://thymeleaf.org"> <!-- The root element enclosing all content -->
+  <head>
+   
+    <meta charset="UTF-8">
+    <title>Thymleaf page is here  </title>
+  </head>
+  <body>
+    
+	
+	<p th:text="${msg}"></p> 
+	<form th:action="@{/product}" th:object="${product}" method="POST">
+		
+		<table>
+			<tr>
+				<td>Product Id</td>
+			    <td> <input type="text" th:field="*{pid}"/> </td>
+			</tr>
+			
+			<tr>
+				 <td>Product Name</td>
+			     <td><input type="text" th:field="*{pname}"/> </td>
+			</tr>
+
+			<tr>
+				 <td>Product Price</td>
+			     <td><input type="text" th:field="*{price}"/> </td>
+			</tr>
+			<tr>
+			       <td></td>
+			       <td><input type="submit" value="Save"/></td>
+			   </tr>
+						
+		</table>
+		
+	</form>
+	
+	
+	
+   <p th:text="${msg}"></p>
+  </body>
+</html>
