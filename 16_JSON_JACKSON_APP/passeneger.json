@@ -1,0 +1,11 @@
+{
+	"name": "Sarthak",
+	"from": "Kasganj",
+	"to": "Delhi",
+	"gender": "Male",
+	"addr": {
+		"city": "kasganj",
+		"state": "up",
+		"country": "india"
+	}
+}
